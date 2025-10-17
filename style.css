@@ -36,12 +36,12 @@
   display: flex;
 }
 .task-ul {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 .task-li, 
 .todo-heading {
-  list-style:none;
+  list-style: none;
 }
 .btn {
   background: none;
@@ -132,9 +132,9 @@
 
 /* Edit Task */
 .edit-mode .text-input {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 .hiden {
-  display:none;
+  display: none;
 }
