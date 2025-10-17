@@ -14,7 +14,7 @@
     >
   </head>
   <body class="page-content">
-    <div class="todo-header">
+    <header class="todo-header">
       <img src="./eisenhower-matrix.jpg">
       <a
         class="todo-header_text"
@@ -22,10 +22,10 @@
       >
         Want more details?
       </a>
-    </div>
-    <div class="centered-main-page_element">
-      <p id="add-task-section">
-        <label for="new-task-input" class="new-task-label task-label">Add Item</label>
+    </header>
+    <main class="centered-main-page_element">
+      <section id="add-task-section">
+        <h1 class="new-task-label task-label">Add Item</h1>
         <div class="task-row-wrapper">
           <input
             id="new-task-input"
@@ -34,8 +34,8 @@
           >
           <button class="btn">Add</button>
         </div>
-      </p>
-      <h3 class="todo-heading">Todo</h3>
+      </section>
+      <h1 class="todo-heading">Todo</h1>
       <ul id="incomplete-tasks" class="task-ul">
         <li class="task-li">
           <input type="checkbox" class="all-inputs checkbox-input">
@@ -60,7 +60,7 @@
           </button>
         </li>
       </ul>
-      <h3 class="todo-heading">Completed</h3>
+      <h1 class="todo-heading">Completed</h1>
       <ul id="complete-tasks" class="task-ul">
         <li class="task-li">
           <input type="checkbox" class="all-inputs checkbox-input" checked>
@@ -72,7 +72,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
