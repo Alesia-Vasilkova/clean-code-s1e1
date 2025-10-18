@@ -3,14 +3,14 @@
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
-}
-.todo-header {
   width: 500px;
   margin: 0 auto;
   display: block;
+}
+.todo-header {
   text-align: right;
 }
-.todo-header img {
+.todo-header-img {
   width: 100%;
 }
 .todo-header .todo-header_text {
@@ -21,11 +21,6 @@
   .todo-header {
     text-align: center;
   }
-}
-.centered-main-page_element {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
 }
 .task {
   width: 56%;

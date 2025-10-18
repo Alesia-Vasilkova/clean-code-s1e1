@@ -15,7 +15,6 @@ const completedTasksHolder = document.getElementById("complete-tasks"); //comple
 //New task list item
 const createNewTaskElement = function (taskString) {
   const listItem = document.createElement("li");
-
   //input (checkbox)
   const checkBox = document.createElement("input"); //checkbox
   //label
@@ -29,22 +28,26 @@ const createNewTaskElement = function (taskString) {
   const deleteButton = document.createElement("button"); //delete button
   const deleteButtonImg = document.createElement("img"); //delete button image
 
+  listItem.className = "task-li";
   label.innerText = taskString;
-  label.className = "task";
+  label.className = "task task-label";
 
   //Each elements, needs appending
   checkBox.type = "checkbox";
+  checkBox.className = "all-inputs checkbox-input";
   editInput.type = "text";
-  editInput.className = "task";
+  editInput.className = "task all-inputs text-input hiden";
 
   editButton.innerText = "Edit"; //innerText encodes special characters, HTML does not.
-  editButton.className = "edit-save";
+  editButton.className = "edit-save btn";
 
-  deleteButton.className = "delete";
+  deleteButton.className = "delete btn";
+  deleteButtonImg.className = "delete-icon";
   deleteButtonImg.src = "./remove.svg";
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
+
   listItem.appendChild(checkBox);
   listItem.appendChild(label);
   listItem.appendChild(editInput);
@@ -167,7 +170,5 @@ for (let i = 0; i < completedTasksHolder.children.length; i++) {
 }
 
 // Issues with usability don't get seen until they are in front of a human tester.
-
 //prevent creation of empty tasks.
-
 //Change edit to save when you are in edit mode.
