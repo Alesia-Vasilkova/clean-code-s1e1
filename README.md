@@ -13,4 +13,4 @@
 - Alternate text is present for all necessary images.
 - The delete button animation works.
 
-https://github.com/Alesia-Vasilkova/clean-code-s1e1/
+https://alesia-vasilkova.github.io/clean-code-s1e1/gh-pages/
